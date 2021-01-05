@@ -66,6 +66,9 @@ function copyright($year) {
 //print the copyright
 echo copyright(date('Y'));
 
+///
+///
+///
 new_exercise(8);
 function login(string $email, string $password) {
     if($email == 'john@example.be' && $password == 'pocahontas') {
@@ -81,6 +84,27 @@ echo '<br/>' . login('john@example.be', 'dfgidfgdfg');
 //Should say: no access
 echo '<br/>' . login('wrong@example', 'wrong');
 /* You can change code again */
+
+new_exercise(9);
+function isLinkValid(string $link) {
+    $unacceptables = array('s:','.doc','.pdf', '.jpg', '.jpeg', '.gif', '.bmp', '.png');
+
+    foreach ($unacceptables as $unacceptable) {
+        if (strpos($link, $unacceptable) == true) {
+            return 'Unacceptable Found<br />';
+        }
+    }
+    return 'Acceptable<br />';
+}
+//invalid link
+echo isLinkValid('http://www.google.com/hack.pdf');
+//invalid link
+echo isLinkValid('https://google.com');
+//VALID link
+echo isLinkValid('http://google.com');
+//VALID link
+echo isLinkValid('http://google.com/test.txt');
+
 
 
 
