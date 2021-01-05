@@ -59,6 +59,13 @@ for ($letter = 'a'; $letter <= 'z'; $letter++) {
 
 print_r($arr); // Array ([0] => a, [1] => b, [2] => c, ...) a-z alphabetical array
 
+new_exercise(7);
+function copyright($year) {
+    return "&copy; $year BeCode";
+}
+//print the copyright
+echo copyright(date('Y'));
+
 new_exercise(8);
 function login(string $email, string $password) {
     if($email == 'john@example.be' && $password == 'pocahontas') {
@@ -75,25 +82,9 @@ echo '<br/>' . login('john@example.be', 'dfgidfgdfg');
 echo '<br/>' . login('wrong@example', 'wrong');
 /* You can change code again */
 
-new_exercise(9);
-function isLinkValid(string $link) {
-    $unacceptables = array('https:','.doc','.pdf', '.jpg', '.jpeg', '.gif', '.bmp', '.png');
 
-    foreach ($unacceptables as $unacceptable) {
-        if (strpos($link, $unacceptable) == true) {
-            return 'Unacceptable Found<br />';
-        }
-    }
-    return 'Acceptable<br />';
-}
-//invalid link
-isLinkValid('http://www.google.com/hack.pdf');
-//invalid link
-isLinkValid('https://google.com');
-//VALID link
-isLinkValid('http://google.com');
-//VALID link
-isLinkValid('http://google.com/test.txt');
+
+
 
 
 
