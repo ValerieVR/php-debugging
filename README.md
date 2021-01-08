@@ -5,6 +5,7 @@ This challenge was provided to me by [BeCode](https://github.com/becodeorg).
 ## :wrench: Tools
 - Visual Studio Code
 - MAMP
+- PHP
 
 ## :pray: Thanks to
 - God
