@@ -8,6 +8,4 @@ This challenge was provided to me by [BeCode](https://github.com/becodeorg).
 - PHP
 
 ## :pray: Thanks to
-- God
-
 - [BeCode](https://github.com/becodeorg)
